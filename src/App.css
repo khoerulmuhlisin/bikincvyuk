@@ -1,0 +1,158 @@
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* CV Template Styles */
+.cv-template-modern {
+  font-family: 'Inter', sans-serif;
+}
+
+.cv-template-modern h1 {
+  letter-spacing: -0.025em;
+}
+
+.cv-template-modern h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.9rem;
+}
+
+.cv-template-professional {
+  font-family: 'Georgia', serif;
+}
+
+.cv-template-professional h1 {
+  font-weight: 600;
+}
+
+.cv-template-professional h3 {
+  border-bottom-width: 2px !important;
+}
+
+.cv-template-creative {
+  font-family: 'Poppins', sans-serif;
+}
+
+.cv-template-creative h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, var(--primary-color) 0%, #000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cv-template-creative h3 {
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  display: inline-block;
+  color: white !important;
+  background-color: var(--primary-color);
+  border-bottom: none !important;
+}
+
+.cv-template-minimalist {
+  font-family: 'SF Pro Display', 'Inter', sans-serif;
+}
+
+.cv-template-minimalist h1 {
+  font-weight: 800;
+  letter-spacing: -0.05em;
+}
+
+.cv-template-minimalist h3 {
+  font-weight: 600;
+  border-bottom: none !important;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.cv-template-minimalist h3:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  bottom: 0.25rem;
+  width: 4px;
+  background-color: var(--primary-color);
+  border-radius: 2px;
+}
+
+.cv-template-classic {
+  font-family: 'Times New Roman', serif;
+}
+
+.cv-template-classic h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cv-template-classic h3 {
+  text-align: center;
+  text-transform: uppercase;
+  border-top: 1px solid var(--primary-color) !important;
+  border-bottom: 1px solid var(--primary-color) !important;
+  padding: 0.25rem 0;
+}
+
+/* Form styling */
+.form-input {
+  @apply w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all;
+}
+
+.section-padding {
+  @apply py-16 md:py-24;
+}
+
+/* Animation delay utilities */
+.animate-delay-100 {
+  animation-delay: 100ms;
+}
+
+.animate-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animate-delay-300 {
+  animation-delay: 300ms;
+}
